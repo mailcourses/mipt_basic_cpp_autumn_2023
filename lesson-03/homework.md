@@ -6,7 +6,7 @@
 ```c++
 struct Allocator;
 
-void init_allocator(Allocator *alloc, size_t maxSize);
+Allocator* init_allocator(size_t maxSize);
 char* alloc(Allocator *alloc, size_t size);
 void reset(Allocator *alloc);
 void clear(Allocator *alloc)
